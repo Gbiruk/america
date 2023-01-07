@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        body{
+          background-color: tomato;
+          height: 1000px;
+        }
+        .wrapper{
+           width: 50px;
+           margin:0 auto;
+        }
+        .logo{
+           float:left;
+        }
+        .logo h2{
+            color:#fff;
+        }
+        .menu-button{
+         background-color: transparent;  
+         color: #fff; 
+         padding: 15px;
+         font-size: 15px;
+         cursor: pointer;
+         border: 2px solid;
+        }
+        .right-menu{
+            position: relative;
+        display:inline-block;
+        float:right;
+    }
+    .dropdown-menu{
+        display:none;
+        position:absolute;
+        background-color: #f9f9f9;
+        min-width: 158px;
+        z-index:1;
+    }
+    .dropdown-menu a:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    .right-menu:hover .dropdown-menu{
+        display:block;
+    }
+    .right-menu:hover .menu-button {
+        background-color: transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+       <div calss="right-menu">
+        <button class="menu-button">Menu</button>
+       <div class="dropdown-menu">
+            <a herf="#" >home</a>
+            <a herf="#" >info</a>
+            <a herf="#" >about</a>
+            <a herf="#" >help</a>
+            <a herf="#" >contact</a>
+        </div>
+    </div>
+</body>
+</html>

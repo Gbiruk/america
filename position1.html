@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box-orange {
+        position:static;   
+        background: orange;
+        width: 100px;
+        height: 100px;
+        top: 100px;       
+        left: 100px;    
+      }
+      .box-blue { 
+        background: rgb(166, 209, 236);
+        height: 100px;
+        width: 100px; 
+        position: static;
+      }
+      td,tr,th{
+        border:2px solid;
+        padding: 2px;
+
+      }
+      .r{
+        position:relative;
+        left:500px;
+      }
+
+
+      </style>
+      <script>
+       function name(){
+            alert("the time is seted");
+            //document.getElementById('f').innerHTML=Date();
+        }
+      </script>
+</head>
+<body>
+    
+        <button onclick="name()">click me</button>
+        <p id="d">local time</p>
+        <p> plan for  this semister</p>
+        <P>we  learn six course in semister this year and we have had test in last week</P>
+        <p> so we remain final and second semister </p>
+        <table style="border: 2px solid">
+           <tr> <th>monday</th><th>thusday</th><th>wensday</th><th>thursday</th><th>friday</th><th>sathurday</th><th>sunday</th>
+        </tr>
+        <tr><td>security</td><td>requirement</td><td>tools</td><td>web</td><td>database</td><td>other</td><td>summery</td></tr></table>
+        <div class="box-orange"></div>
+        <div class="box-blue"></div>
+
+      </body>
+
+</html>
